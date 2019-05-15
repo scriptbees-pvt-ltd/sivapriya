@@ -1,0 +1,58 @@
+<html>
+<head>
+    <script type="text/javascript">
+        var lower_sum = 0;
+        var upper_sum = 0;
+        var a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+        var rows = a.length;
+        var cols = a[0].length;
+        document.write("length is:", a);
+        document.write("</br>");
+        document.write("length of a is:", a.length);
+        document.write("</br>");
+        document.write("rows are:", rows);
+        document.write("</br>");
+        document.write("a[0] length is:", a[0].length);
+        document.write("</br>");
+        document.write("cols are:", cols);
+        if (rows != cols) {
+            document.write("matrix should be a sequence matrix");
+            document.write("</br>");
+        }
+        else {
+            document.write("</br>");
+            document.write("Lower triangular matrix are:");
+            document.write("</br>");
+            for (var i = 0; i < rows; i++) {
+                for (var j = 0; j < cols; j++) {
+                    if (j > i) {
+                        document.write(0);
+                    }
+                    else {
+                        document.write(a[i][j]);
+                        lower_sum += a[i][j];
+                    }
+                }
+                document.write("</br>");
+            }
+            document.write("Lower sum is:", lower_sum);
+            document.write("</br>");
+            document.write("Upper triangular matrix are:");
+            document.write("</br>");
+            for (var i = 0; i < rows; i++) {
+                for (var j = 0; j < cols; j++) {
+                    if (j < i) {
+                        document.write(0);
+                    }
+                    else {
+                        document.write(a[i][j]);
+                        upper_sum += a[i][j];
+                    }
+                }
+                document.write("</br>");
+            }
+            document.write("Upper sum is:", upper_sum);
+        }
+    </script>
+</head>
+</html>

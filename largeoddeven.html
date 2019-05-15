@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script type="text/javascript">
+
+        var even=0;
+        var odd=0;
+        var n=prompt("enter the numbers");
+        var digits=n.split(" ");
+        var i;
+        for(i=0;i<digits.length;i++){
+            if(digits[i]%2==0){
+                even =parseInt(digits[i]);
+            }
+            else if(digits[i]%2!=0){
+                odd =parseInt(digits[i]);
+            }
+
+        }
+
+       document.write("even numbers:",Math.max(even));
+       document.write("</br>");
+       document.write("odd numbers:",Math.max(odd));
+    </script>
+</head>
+</html>

@@ -1,0 +1,23 @@
+<html>
+   <head>
+      <body>
+         <button onclick="fact()">click</button>
+         <h2 id="output"></h2>
+         <script>
+         function fact() 
+         {
+         var enter = prompt("Enter Factorial Number:", "");
+         var Num_enter = Number(enter);
+         for (var i = 1, FactNumber = 1; i <= Num_enter; i++) 
+         {
+            FactNumber = FactNumber * i;
+         }
+         if (Num_enter) 
+         {
+            document.getElementById("output").textContent = "the factorial of " + Num_enter + " is: " + Num_enter + "!= " + FactNumber;
+         }
+         }
+         </script>
+      </body>
+   </head>
+</html>
