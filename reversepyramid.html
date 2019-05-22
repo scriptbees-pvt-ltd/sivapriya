@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <script>
+        var totalNumberofRows = 5;
+        for (i = totalNumberofRows; i > 0; i--) {
+            for (j = 1; j <= (totalNumberofRows - i); j++) {
+                document.write("&nbsp;");
+            }
+            for (k = 1; k <= i; k++) {
+                document.write(" * ");
+            }
+            document.write("<br/>");
+        }
+    </script>
+</head>
+
+</html>
