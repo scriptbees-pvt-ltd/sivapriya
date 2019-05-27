@@ -1,22 +1,10 @@
-function lcm_two_numbers(x,y)
-{
-    var x;
-    if((typeof x!=='number')||(typeof y!=='number'))
-    return false;
-    return(!x||!y)?0:Math.abs((x*y)/gcd_two_numbers(x,y));
-}
-function gcd_two_numbers(x,y)
-{
-   x=Math.abs(x);
-   y=Math.abs(y);
-    while(y)
-    {
-        var t=y;
-        y=x%y;
-        x=t;
+var lcm = function (n1, n2) {
+    var large = Math.max(n1, n2);
+    var small = Math.min(n1, n2);
+    var i = large;
+    while (i % small !== 0) {
+        i += large;
     }
-    return x;
-}
-console.log(lcm_two_numbers(3,15));
-console.log(lcm_two_numbers(10,15));
-
+    return i;
+};
+console.log(lcm(8, 28));
