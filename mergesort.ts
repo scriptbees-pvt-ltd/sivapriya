@@ -4,11 +4,11 @@ function mergesort(leftArr, rightArr) {
     while (leftArr.length && rightArr.length) {
         if (leftArr[0] <= rightArr[0]) {
             sortedArr.push(leftArr[0]);
-            leftArr = leftArr.slice(1);
+            leftArr = leftArr.slice(1)
         }
         else {
             sortedArr.push(rightArr[0]);
-            rightArr = rightArr.slice(1);
+            rightArr = rightArr.slice(1)
         }
     }
     while (leftArr.length)

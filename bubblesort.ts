@@ -11,5 +11,5 @@ function bubble(items) {
     }
     return sort;
 }
-var sort = [30, 20, 40, 10, 50,];
+var sort = [ 30, 20, 40, 10, 50,]
 console.log(bubble(sort));
