@@ -1,6 +1,5 @@
-function getfree(ismember)
-{
-    return(ismember?"$2.00":"$10.00");
+function getfree(ismember) {
+    return (ismember ? "$2.00" : "$10.00");
 }
 console.log(getfree(true));
 console.log(getfree(false));

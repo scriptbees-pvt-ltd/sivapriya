@@ -1,6 +1,6 @@
 function MyFunction() {
     var fruits = ["Banana", "Orange", "Apple", "Mango"];
-    delete fruits[1];
+    fruits.push("Kiwi");
     console.log(fruits);
 }
 MyFunction();

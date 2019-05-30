@@ -7,13 +7,11 @@ function check_Palindrome(str_entry) {
     }
     if ((cstr.length) % 2 == 0) {
         ccount = (cstr.length) / 2;
-    }
-    else {
+    } else {
         if (cstr.length == 1) {
             console.log("string is a palindrome.");
             return true;
-        }
-        else {
+        } else {
             ccount = (cstr.length - 1) / 2;
         }
     }
